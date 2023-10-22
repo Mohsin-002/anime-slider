@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Posters slider</title>
+</head>
+<body class="bg-gray-600">
+  <div class="my-container mx-auto mt-16">
+  <div class="carousel h-[30rem] w-[80%] mx-auto relative">
+
+    <button class="carousel__button carousel__button--left -left-20 hidden">
+      <img src="images/backward.png" alt="">
+    </button>
+
+    <div class="carousel__track-container h-full w-full relative overflow-hidden">
+      <ul class="carousel__track h-full transition ease-in-out duration-150">
+
+        <li class="carousel__slide current-slide">
+          <img src="images/NoisyCell To Perform Death Parade End Theme.jpg" alt="" class="carousel__img">
+          <span class="left-of-img">
+            <h2 class="img-title">Death Parade</h2>
+            <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, autem labore commodi nostrum perspiciatis repellendus libero dolor.</p>
+          </span>
+        </li>
+        
+        <li class="carousel__slide">
+          <img src="images/wp6031045-cool-anime-demon-slayer-phone-wallpapers.jpg" alt="" class="carousel__img">
+          <span class="left-of-img">
+            <h2 class="img-title">Demon Slayer</h2>
+            <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, autem labore commodi nostrum perspiciatis repellendus libero dolor.</p>
+          </span>
+        </li>
+        <li class="carousel__slide">
+          <img src="images/wp8297346-anime-poster-wallpapers.jpg" alt="" class="carousel__img">
+          <span class="left-of-img">
+            <h2 class="img-title">darling in the franxx</h2>
+            <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, autem labore commodi nostrum perspiciatis repellendus libero dolor.</p>
+          </span>
+        </li>
+        <li class="carousel__slide">
+          <img src="images/cropped-1920-1080-1124786.jpg" alt="" class="carousel__img">
+          <span class="left-of-img">
+            <h2 class="img-title">jujutsu kaisen</h2>
+            <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, autem labore commodi nostrum perspiciatis repellendus libero dolor.</p>
+          </span>
+        </li>
+        <li class="carousel__slide">
+          <img src="images/314574.png" alt="" class="carousel__img">
+          <span class="left-of-img">
+            <h2 class="img-title">sword art online</h2>
+            <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, autem labore commodi nostrum perspiciatis repellendus libero dolor.</p>
+          </span>
+        </li>
+        <li class="carousel__slide">
+          <img src="images/598786.jpg" alt="" class="carousel__img">
+          <span class="left-of-img">
+            <h2 class="img-title">NARUTO</h2>
+            <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem, autem labore commodi nostrum perspiciatis repellendus libero dolor.</p>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <button class="carousel__button carousel__button--right -right-20">
+      <img src="images/forward.png" alt="">
+    </button>
+  </div>
+
+  <div class="carousel-nav w-[80%] h-8 flex bg-black mx-auto items-center justify-center space-x-2 px-4">
+    <button class="carousel-indicator current-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+    <button class="carousel-indicator"></button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

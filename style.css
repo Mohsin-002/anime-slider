@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: "space";
+    src: url("fonts/SpaceGrotesk-Regular.ttf");
+}
+
+@layer components{
+
+    .carousel__slide{
+        @apply absolute h-full w-full flex flex-col md:flex-row items-center bg-gray-300
+    }
+
+    .carousel__img{
+        @apply w-full h-full object-cover
+    }
+
+    .img-title{
+        @apply text-black text-3xl font-medium uppercase font-space
+    }
+
+    .img-desc{
+        @apply text-black text-lg pt-6
+    }
+
+    .left-of-img{
+        @apply p-10 max-w-max
+    }
+
+    .carousel__button{
+        @apply absolute top-1/2 -translate-y-1/2 w-16 hover:transform hover:scale-125 hover:transition ease-in-out duration-100 hidden md:block
+    }
+
+    .carousel-indicator{
+        @apply h-4 w-full hover:bg-[rgba(0,191,255,.75)] rounded-lg
+    }
+
+    .current-indicator{
+        @apply bg-[rgba(0,191,255)] hover:bg-[rgba(30,144,255)]
+    }
+}
